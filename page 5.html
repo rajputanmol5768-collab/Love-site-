@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forever Us ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#ff2e63,#ff6b81,#ff8fab,#ffc2d1);
+background-size:400% 400%;
+animation:bg 10s infinite;
+overflow:hidden;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.box{
+width:92%;
+max-width:430px;
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(12px);
+border-radius:25px;
+color:white;
+box-shadow:0 0 25px rgba(255,255,255,.5);
+z-index:2;
+}
+
+h1{
+font-size:34px;
+margin-bottom:20px;
+}
+
+p{
+font-size:18px;
+line-height:30px;
+}
+
+.signature{
+margin-top:25px;
+font-size:22px;
+font-weight:bold;
+color:#fff;
+}
+
+.heart{
+position:absolute;
+font-size:25px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>❤️ Forever & Always ❤️</h1>
+
+<p>
+
+My Dearest Sakshii... 🌹❤️
+
+Thank you for coming into my life and making every day brighter.
+
+No matter where life takes us, my heart will always choose you.
+
+I promise to stand beside you in happiness, in sadness, in every dream, and in every challenge.
+
+You're my peace, my happiness, my safest place, and my forever home.
+
+Every heartbeat of mine whispers only one name...
+
+<strong>Sakshii.</strong> ❤️
+
+If I ever get another life, I'll still search for you, fall in love with you, and choose you again.
+
+I don't need a perfect world...
+
+I just need **you**. 🥹❤️
+
+I Love You Infinity × Infinity ❤️♾️
+
+</p>
+
+<div class="signature">
+
+Forever Yours ❤️<br>
+
+<b>Anmol ❤️ Sakshii</b>
+
+</div>
+
+</div>
+
+<script>
+
+for(let i=0;i<60;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*25)+"px";
+
+heart.style.animationDuration=(4+Math.random()*5)+"s";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>

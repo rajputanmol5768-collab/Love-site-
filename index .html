@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Sakshii ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#ff4e8a,#ff8fb1,#ff6f91,#ff2e63);
+    background-size:400% 400%;
+    animation:bg 10s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+    text-align:center;
+    color:white;
+    z-index:2;
+    padding:20px;
+}
+
+h1{
+    font-size:42px;
+    text-shadow:0 0 20px rgba(255,255,255,.7);
+}
+
+h2{
+    font-size:28px;
+    margin-top:15px;
+}
+
+p{
+    margin-top:20px;
+    font-size:18px;
+    line-height:30px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    text-decoration:none;
+    color:#ff2e63;
+    background:white;
+    border-radius:40px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.4s;
+    box-shadow:0 0 20px white;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    background:#ffe4ec;
+}
+
+.heart{
+    position:absolute;
+    color:rgba(255,255,255,.6);
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px) rotate(0deg);
+opacity:0;
+}
+30%{
+opacity:1;
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>❤️ For My Beautiful Sakshii ❤️</h1>
+
+<h2>Welcome My Love 💖</h2>
+
+<p>
+Every heartbeat whispers your name...<br>
+Every smile begins because of you...<br>
+This little website is made with endless love,<br>
+only for the most precious girl in my life.<br><br>
+
+Forever & Always ❤️
+</p>
+
+<a href="page2.html" class="btn">
+Enter Our Story ❤️
+</a>
+
+</div>
+
+<script>
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*30)+"px";
+
+heart.style.animationDuration=(4+Math.random()*6)+"s";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
+ <a href="page2.html" class="btn">Enter Our Story ❤️</a>o

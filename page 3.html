@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Promise ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff2e63,#ff758c,#ffb6c1);
+overflow:hidden;
+}
+
+.container{
+width:90%;
+max-width:420px;
+padding:25px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(12px);
+border-radius:20px;
+text-align:center;
+color:white;
+box-shadow:0 0 20px rgba(255,255,255,.5);
+}
+
+h1{
+font-size:32px;
+margin-bottom:20px;
+}
+
+p{
+font-size:19px;
+line-height:32px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:white;
+color:#ff2e63;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+}
+
+.heart{
+position:absolute;
+font-size:24px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💖 My Promise 💖</h1>
+
+<p>
+Sakshii... ❤️<br><br>
+
+No matter what happens,<br>
+I'll always stand beside you. 🤝<br><br>
+
+I'll protect your smile, wipe your tears, and love you with all my heart. 💞<br><br>
+
+You are my today, my tomorrow, and my forever. 🌹
+</p>
+
+<a href="page4.html" class="btn">Next Surprise ❤️</a>
+
+</div>
+
+<script>
+for(let i=0;i<40;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(4+Math.random()*5)+"s";
+h.style.animationDelay=Math.random()*5+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>

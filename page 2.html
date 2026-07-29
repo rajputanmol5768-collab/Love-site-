@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff4d6d,#ff8fab,#ffc2d1);
+overflow:hidden;
+}
+
+.container{
+width:90%;
+max-width:420px;
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,255,255,.4);
+color:#fff;
+}
+
+img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+box-shadow:0 0 20px white;
+margin-bottom:20px;
+}
+
+h1{
+font-size:34px;
+margin-bottom:15px;
+}
+
+p{
+font-size:20px;
+line-height:32px;
+}
+
+.next{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:white;
+color:#ff2d55;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+}
+
+.heart{
+position:absolute;
+font-size:25px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{transform:translateY(-100px);opacity:0;}
+20%{opacity:1;}
+100%{transform:translateY(110vh);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="images/sakshi1.jpg" alt="Sakshi">
+
+<h1>Our Story ❤️</h1>
+
+<p>
+22 March 2020...<br><br>
+
+The day our beautiful story began. 🌸<br><br>
+
+No matter how many ups and downs came into our lives, my heart never stopped loving you. ❤️<br><br>
+
+You are my happiness, my peace, my forever and my everything. 🥹💖
+</p>
+
+<a href="page3.html" class="next">Continue ❤️</a>
+
+</div>
+
+<script>
+for(let i=0;i<40;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(4+Math.random()*5)+"s";
+h.style.animationDelay=Math.random()*5+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
